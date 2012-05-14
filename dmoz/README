@@ -1,0 +1,11 @@
+爬虫框架 scrapy
+
+items.py 中定义提取的数据的存储数据结构
+spiders/ 用户自定义的爬虫程序
+pipelines.py 是爬虫程序返回的结果经过该程序，该程序可以进行过滤以及存储
+定义完过滤程序后，需要在setting.py中进行声明
+
+
+创建工程  scrapy startproject dmoz
+cd dmoz
+执行：scrapy crawl dmoz      “dmoz"是spiders文件中的name值
